@@ -1,3 +1,4 @@
+1. 
 Описание проекта
 Интернет-магазин «В один клик» продаёт разные товары: для детей, для дома, мелкую бытовую технику, 
 косметику и даже продукты. 
@@ -27,4 +28,12 @@
 По результатам тестирования моделей МО с различными гиперпараметрами с использованием класса RandomizedSearchCV
 на основании значения метрики ROC-AUC:
 - лучшей моделью оказалась LogisticRegression 
-с гиперпараметрами C=4, class_weight='balanced', random_state=42, solver='saga'
+с гиперпараметрами C=4, class_weight='balanced', random_state=42, solver='saga'.
+
+
+2.
+Добавлена модель RandomForestClassifier.
+
+По итогам нового тестирования всех моделей с использованием класса RandomizedSearchCV лушчей оказалась
+RandomForestClassifier с гиперпараметрами: 
+max_depth=7, max_features='log2', min_samples_leaf=2, min_samples_split=6, n_estimators=110 
